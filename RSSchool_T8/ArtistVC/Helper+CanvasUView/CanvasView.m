@@ -8,9 +8,6 @@
 #import "CanvasView.h"
 #import "RSSchool_T8-Swift.h"
 
-@interface CanvasView (ShemaViewArray)
-- ( NSArray* ) AddPlanetArray;
-@end
 
 @implementation CanvasView
 

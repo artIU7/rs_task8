@@ -16,6 +16,7 @@
 		B705973F26A739980079E53C /* DrawingVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B705973E26A739980079E53C /* DrawingVCViewController.swift */; };
 		B705974426A759520079E53C /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = B705974326A759520079E53C /* CanvasView.m */; };
 		B705974726A7612E0079E53C /* ShemaViewArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B705974626A7612E0079E53C /* ShemaViewArray.m */; };
+		B705974A26A7740C0079E53C /* PaleteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B705974926A7740C0079E53C /* PaleteVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		B705974226A759520079E53C /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		B705974326A759520079E53C /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		B705974626A7612E0079E53C /* ShemaViewArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShemaViewArray.m; sourceTree = "<group>"; };
+		B705974826A7740C0079E53C /* PaleteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaleteVC.h; sourceTree = "<group>"; };
+		B705974926A7740C0079E53C /* PaleteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaleteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 		B705974026A757C80079E53C /* PalleteVC */ = {
 			isa = PBXGroup;
 			children = (
+				B705974826A7740C0079E53C /* PaleteVC.h */,
+				B705974926A7740C0079E53C /* PaleteVC.m */,
 			);
 			path = PalleteVC;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				B705974726A7612E0079E53C /* ShemaViewArray.m in Sources */,
 				B705973526A730810079E53C /* main.m in Sources */,
 				B705974426A759520079E53C /* CanvasView.m in Sources */,
+				B705974A26A7740C0079E53C /* PaleteVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

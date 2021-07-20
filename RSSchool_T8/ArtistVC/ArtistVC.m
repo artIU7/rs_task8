@@ -11,6 +11,9 @@
 
 @interface ArtistVC (ShemaViewArray)
 - ( NSArray* ) AddPlanetArray;
+- ( NSArray* ) AddHeadArray;
+- ( NSArray* ) AddTreeArray;
+- ( NSArray* ) AddLandscapeArray;
 @end
 
 BOOL drawPrepare = false;
@@ -81,9 +84,26 @@ BOOL drawPrepare = false;
 - (void) buttonIsTapped:(UIButton *)paramSender {
     drawPrepare = true;
     NSInteger index = DrawingVCViewController.arrayDrawIndex;
-    if ( index == 1 ) {
+    if ( index == 0 ) {
         self.canvasVI.arrayDraw = [NSMutableArray new];
         [ self.canvasVI.arrayDraw addObjectsFromArray:[  self AddPlanetArray ] ];
+        NSLog(@"%@",self.canvasVI.arrayDraw);
+        [self.canvasVI.layer setNeedsDisplay];
+    } else if ( index == 1 ) {
+        self.canvasVI.arrayDraw = [NSMutableArray new];
+        [ self.canvasVI.arrayDraw addObjectsFromArray:[  self AddHeadArray ] ];
+        NSLog(@"%@",self.canvasVI.arrayDraw);
+        [self.canvasVI.layer setNeedsDisplay];
+    } else if ( index == 2 ) {
+        self.canvasVI.arrayDraw = [NSMutableArray new];
+        [ self.canvasVI.arrayDraw addObjectsFromArray:[  self AddTreeArray ] ];
+        NSLog(@"%@",self.canvasVI.arrayDraw);
+        [self.canvasVI.layer setNeedsDisplay];
+    }  else if ( index == 3 ) {
+        self.canvasVI.arrayDraw = [NSMutableArray new];
+        [ self.canvasVI.arrayDraw addObjectsFromArray:[  self AddLandscapeArray ] ];
+        NSLog(@"%@",self.canvasVI.arrayDraw);
+        [self.canvasVI.layer setNeedsDisplay];
     }
 }
 
